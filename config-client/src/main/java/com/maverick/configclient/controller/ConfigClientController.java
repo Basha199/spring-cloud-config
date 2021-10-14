@@ -18,9 +18,11 @@ public class ConfigClientController {
 
     @GetMapping(path = "/")
     public Map<String, String> main() {
+
         Map<String, String> map = new HashMap<>();
         map.put("activeProfile", profile);
         map.put("appName", appName);
+        System.out.println("Map Data : " +map);
         return map;
     }
 
